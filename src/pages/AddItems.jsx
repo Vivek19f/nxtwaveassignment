@@ -31,10 +31,7 @@ function AddItems(props) {
     <>
       <Header isbutton={false} />
       <div className="add__items__main">
-        <div
-          className="add__items__back_button"
-          onClick={() => navigate("/home")}
-        >
+        <div className="add__items__back_button" onClick={() => navigate("/")}>
           {" "}
           <span style={{ color: "#171F46" }}>&#x276E;</span> User
         </div>
