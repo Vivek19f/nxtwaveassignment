@@ -5,17 +5,17 @@ import Home from "./pages/Home";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/nxtwaveassignment/",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/home",
+    path: "/nxtwaveassignment/home",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/add-items",
+    path: "/nxtwaveassignment/add-items",
     element: <AddItems />,
     errorElement: <ErrorPage />,
   },

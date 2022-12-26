@@ -15,7 +15,7 @@ function Header(props) {
         <div className={styles.right__section}>
           {props.isButton ? (
             <button
-              onClick={() => history("/add-items")}
+              onClick={() => history("/nxtwaveassignment/add-items")}
               className={styles.button}
             >
               Add Items
