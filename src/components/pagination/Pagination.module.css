@@ -1,0 +1,18 @@
+/* .wrapper {
+  margin: 0 auto;
+  display: block;
+  width: 960px;
+} */
+.pagination {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.pagination__button {
+  padding: 0.8rem 1rem;
+  margin-right: 0.4rem;
+  border: 1px solid #d7dfe9;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}

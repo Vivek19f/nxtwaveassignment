@@ -1,0 +1,68 @@
+.tab__container {
+  overflow: auto;
+}
+.tab {
+  width: 100%;
+  padding: 0px 0px;
+  font-family: "Nunito";
+  color: #474d66;
+  margin-top: 30px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  font-weight: 600;
+  text-align: center;
+}
+
+ul.inline,
+li {
+  display: inline-block;
+  margin-left: 0;
+  padding-top: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #171f46;
+  background: rgba(215, 223, 233, 0.24);
+  border: 1px solid #d7dfe9;
+  padding: 0.5rem 4rem;
+}
+
+@media only screen and (max-width: 640px) {
+  ul.inline,
+  li {
+    display: inline-block;
+    margin-left: 0;
+    padding-top: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #171f46;
+    background: rgba(215, 223, 233, 0.24);
+    border: 1px solid #d7dfe9;
+    padding: 0.5rem 2rem;
+  }
+}
+li:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+li:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+li:nth-child(odd) {
+  border-left: none;
+  border-right: none;
+}
+
+.selected {
+  background: #0b69ff !important;
+  color: #ffffff;
+}
