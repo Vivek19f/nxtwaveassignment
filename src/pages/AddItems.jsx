@@ -33,7 +33,7 @@ function AddItems(props) {
       <div className="add__items__main">
         <div
           className="add__items__back_button"
-          onClick={() => navigate("/nxtwaveassignment/home")}
+          onClick={() => navigate("/home")}
         >
           {" "}
           <span style={{ color: "#171F46" }}>&#x276E;</span> User
