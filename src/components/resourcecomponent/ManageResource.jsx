@@ -14,13 +14,22 @@ function ManageResource({ data, handleSearch }) {
   const totalPages = useMemo(() => data.length / INC_VALUE, [data]);
 
   const handlePageChange = (page) => {
-    if (page > 0 && page <= totalPages) {
-      let start = startPage + INC_VALUE;
-      let end = endPage + INC_VALUE;
+    if (page >= 0 && page <= totalPages) {
+      if (currentPage < page) {
+        let start = startPage + INC_VALUE;
+        let end = endPage + INC_VALUE;
 
-      setCurrentPage(page);
-      setStartPage(start);
-      setEndPage(end);
+        setCurrentPage(page);
+        setStartPage(start);
+        setEndPage(end);
+      } else {
+        let start = startPage - INC_VALUE;
+        let end = endPage - INC_VALUE;
+
+        setCurrentPage(page);
+        setStartPage(start);
+        setEndPage(end);
+      }
     }
   };
 
